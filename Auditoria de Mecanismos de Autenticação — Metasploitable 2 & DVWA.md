@@ -109,7 +109,7 @@ Cada etapa foi documentada com objetivo, comando executado, resultado observado,
 Mapear a superfície de ataque do alvo antes da execução dos testes de autenticação, identificando portas abertas, serviços e versões.
 
 
-![[docs/1.png]]
+![Imagem 1](imagens/1.png)
 
 
 ### Comando
@@ -256,12 +256,17 @@ Wordlist: `senha_errada_01`, `senha_errada_02`, `senha_errada_03` (1 tarefa simu
 > **Observação:** não foi observado bloqueio de conta após três tentativas inválidas consecutivas, nas condições específicas testadas. Esse resultado não comprova a ausência absoluta de mecanismos de bloqueio no serviço — apenas que, no cenário avaliado (três tentativas, uma conta, uma tarefa simultânea), nenhum bloqueio foi acionado.
 
 
-![[4.png]]
-![[5.png]]
-![[8.png]]
-![[11.png]]
-![[12.png]]
-![[13.png]]
+![Imagem 4](imagens/4.png)
+
+![Imagem 5](imagens/5.png)
+
+![Imagem 8](imagens/8.png)
+
+![Imagem 11](imagens/11.png)
+
+![Imagem 12](imagens/12.png)
+
+![Imagem 13](imagens/13.png)
 
 
 
@@ -324,12 +329,14 @@ O Medusa reproduziu corretamente a autenticação HTTP, enviando os cookies nece
 O método GET transporta os parâmetros de autenticação diretamente na URL da requisição, o que pode expor essas informações em históricos de navegador, logs de servidores web e proxies, ferramentas intermediárias (caches, balanceadores) e outros registros ao longo do caminho da requisição. A utilização de HTTPS reduz a exposição em trânsito, mas não elimina os riscos de exposição em logs e históricos locais.
 
 A ausência de um campo de token anti-CSRF identificado no formulário é uma observação estrutural; isoladamente, ela não constitui uma comprovação de vulnerabilidade CSRF explorável, que exigiria testes dedicados fora do escopo deste projeto.
-![[14.png]]
-![[15.png]]
-![[16.png]]
-![[17.png]]
 
+![Imagem 14](imagens/14.png)
 
+![Imagem 15](imagens/15.png)
+
+![Imagem 16](imagens/16.png)
+
+![Imagem 17](imagens/17.png)
 
 ---
 
